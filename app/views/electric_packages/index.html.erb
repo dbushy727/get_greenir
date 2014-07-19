@@ -1,0 +1,12 @@
+<h2>Electric Packages</h2>
+
+<% @electric_packages.each do |package| %>
+<ul>
+  <a href="/electric_packages/<%= package.id %>">
+    <h3><%= package.name %></h3>
+  </a>
+  <li><%= package.description %></li>
+  <li><%= package.price %></li>
+  <li><%= package.plan_type %></li>
+</ul>
+<% end %>

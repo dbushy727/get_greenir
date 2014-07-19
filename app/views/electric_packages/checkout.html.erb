@@ -1,0 +1,20 @@
+<h2>Checkout</h2>
+
+<p>You have selected <%= @electric_package.name %></p>
+
+<ul>This package includes: </ul>
+<li><%= @electric_package.price %></li>
+<li><%= @electric_package.percent_renewable %></li>
+<li><%= @electric_package.duration %></li>
+<li><%= @electric_package.cancellation_fee %></li>
+
+<p>Please fill out your information</p>
+
+<form action="electric_packages/purchase" method="post">
+  <input type="text">
+  <input type="text">
+  <input type="text">
+  <input type="text">
+  <input type="text">
+  <input type="submit" value="Checkout">
+</form>

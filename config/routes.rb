@@ -6,22 +6,9 @@ GetGreenir::Application.routes.draw do
 
   root to: "home#index"
 
+  get '/electric_packages/checkout/:id' => "electric_packages#checkout"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  post '/electric_packages/purchase'    => "electric_packages#purchase"
 
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index
