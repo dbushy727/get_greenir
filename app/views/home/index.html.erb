@@ -1,21 +1,38 @@
-<div class="splash">
-  <div class="container-fluid splash_form">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="title">Greenir</div>
+<div class="intro-header">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                      <h1>Supply Your Home Or Apartment With Renewable Electricity In Less Than 5 Minutes</h1>
+                    </div>
+                    <form class="form-inline" action="/electric_packages" method="GET">
+                          <div class='form-group'>
+                            <input type="text" name="zip_code" id="splash_input" placeholder="Enter Zip">
+                          </div>
+                          <div class="form-group">
+                            <input class='zip_submit' type="submit" id="splash_submit" value="Go Green">
+                          </div>
+                        </form>  
+                </div>
+            </div>
+
+            <div class="row" id="pitches">
+              <div class="col-md-4"><h2>Review Your Local Renewable Electricity Packages</h2></div>
+              <div class="col-md-4"><h2>Choose The Package That Works For You</h2></div>
+              <div class="col-md-4"><h2>Join The Green Energy Movement</h2></div>
+            </div>
+
+          
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <form action="/electric_packages" method="GET">
-          <div class="form-group">
-            <input type="text" name="zip_code" id="splash_input">
-          </div>
-          <div class="form-group">
-            <input type="submit" id="splash_submit" value="Go Green">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+        <!-- /.container -->
+
 </div>
+<!-- /.intro-header -->
+
+
+
+
+
+

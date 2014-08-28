@@ -20,7 +20,7 @@ development:
   database: get_greenir_development
   pool: 5
   username: 
-  password:
+  password: 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -49,12 +49,12 @@ test:
   database: get_greenir_test
   pool: 5
   username: 
-  password:
+  password: 
 
 production:
   adapter: postgresql
   encoding: unicode
   database: get_greenir_production
   pool: 5
-  username: 
-  password:
+  username:   
+  password: 
