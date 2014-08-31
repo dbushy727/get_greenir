@@ -1,3 +1,46 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Navigation Styling Starts */
+
+.nav {
+  margin-right: 20px;
+
+}
+.nav a {
+  margin-top: 20px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.nav li a:hover {
+  color: #00AF33;
+  background-color: transparent;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgba(26, 26, 102, 1);
+  height: 5em;
+}
+
+.logo {
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+/* Navigation Styleing Ends */
+
+
+/* Start Intro Section */
+
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
@@ -6,6 +49,13 @@
     background: url("cartoon_background.jpg") no-repeat center center;
     background-size: cover;
     height: 30em;
+}
+
+.logo {
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
 
 #splash_input {
@@ -23,3 +73,12 @@
 #pitches {
 	margin-top: 20px;
 }
+
+/* End Intro section */
+
+.middle_section {
+    background-color: #edeef0;
+    height: 25em;
+}
+
+/* Start Middle Section */
