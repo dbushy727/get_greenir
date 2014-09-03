@@ -5,37 +5,43 @@ body {
 }
 
 /* Navigation Styling Starts */
-
-.nav {
-  margin-right: 20px;
-
+.custom {
+  border: 0;
 }
-.nav a {
+.custom .nav {
+  margin-right: 20px;
+}
+.custom .navbar-nav>li>a {
   margin-top: 20px;
   color: white;
   font-size: 17px;
   font-weight: bold;
 }
 
-.nav li a:hover {
-  color: #00AF33;
+.custom .nav li a:hover {
+  color: rgb(49, 240, 103);
   background-color: transparent;
 }
 
-.navbar-brand {
+.custom .navbar-brand {
+  color: white;
   padding: 0;
 }
 
+.custom .navbar-brand:hover {
+  color: rgb(49, 240, 103);
+  background-color: transparent;
+}
+
 .navbar {
-  background-color: rgba(26, 26, 102, 1);
   height: 5em;
+  background-color: rgba(255,255,255,0);
 }
 
 .logo {
   height: 80px;
   padding: 10px;
   margin-bottom: 10px;
-  margin-left: 30px;
 }
 
 /* Navigation Styleing Ends */
@@ -49,7 +55,7 @@ body {
   height: 100%;
 }
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 6em; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 10em;
     text-align: center;
     color: #f8f8f8;
@@ -61,13 +67,6 @@ body {
   padding: 0.5em 1em;
   letter-spacing: 1px;
   word-spacing: 5px;
-}
-
-.logo {
-  height: 80px;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-left: 30px;
 }
 
 .splash_form {
@@ -91,8 +90,7 @@ body {
 /* End Intro section */
 
 .middle_section {
-    background-color: #edeef0;
-    text-align: center;
+  text-align: center;
 }
 
 .how_it_works {
