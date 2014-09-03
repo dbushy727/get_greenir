@@ -59,7 +59,13 @@ body {
     padding-bottom: 10em;
     text-align: center;
     color: #f8f8f8;
-    background: url("temp_green_background.jpg") no-repeat center center;
+/*    background: url("temp_green_background.jpg") no-repeat center center;
+    background-size: cover;*/
+
+    background: url("temp_green_background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 .intro-message {
@@ -89,6 +95,7 @@ body {
 
 /* End Intro section */
 
+/* Start Middle Section */
 .middle_section {
   text-align: center;
 }
@@ -103,7 +110,10 @@ body {
 #pitches {
   margin: 4em 0;
 }
-
+.pitch_point {
+  padding: 2em 0;
+  margin: 1em 0;
+}
 .pitch_tagline {
   font-size: 1.8em;
   letter-spacing: 0.5px;
@@ -112,5 +122,15 @@ body {
 .pitch_icon img {
   border-radius: 50%;
 }
+/* End Middle Section*/
 
-/* Start Middle Section */
+/*MEDIA QUERIES*/
+@media(max-width: 600px) {
+  /* Intro Section */
+  .intro-message {
+    font-size: 2em;
+  }
+  #splash_input {
+    text-align: center;
+  }
+}
