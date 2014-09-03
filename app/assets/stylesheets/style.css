@@ -1,5 +1,6 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
 }
 
 /* Navigation Styling Starts */
@@ -41,6 +42,10 @@ body {
 
 /* Start Intro Section */
 
+.action_box {
+  background-color: rgba(8,8,8,0.5);
+  border-radius: 6px;
+}
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
@@ -48,7 +53,12 @@ body {
     color: #f8f8f8;
     background: url("cartoon_background.jpg") no-repeat center center;
     background-size: cover;
-    height: 30em;
+}
+.intro-message {
+  font-size: 3em;
+  padding: 0.5em 1em;
+  letter-spacing: 1px;
+  word-spacing: 5px;
 }
 
 .logo {
@@ -58,20 +68,33 @@ body {
   margin-left: 30px;
 }
 
+.splash_form {
+  margin-top: 2em;
+}
+
 #splash_input {
 	height: 45px;
 	width: 10em;
 	font-size: 30px;
+  border: 0;
+  border-radius: 2px;
+  color: #333;
 }
 
 .zip_submit {
-    background-color: green;
-    height: 45px;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 #pitches {
-	margin-top: 20px;
+  margin: 4em 0;
+}
+
+.pitch_tagline {
+  font-size: 1.8em;
+  letter-spacing: 0.5px;
+}
+.pitch_icon img {
+  border-radius: 50%;
 }
 
 /* End Intro section */
