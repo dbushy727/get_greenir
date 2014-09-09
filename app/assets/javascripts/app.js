@@ -1,6 +1,6 @@
 function colorNav() {
   $(window).on("scroll", function(e) {
-    var top_of_middle_section = ($('.middle_section').position().top - 55);
+    var top_of_middle_section = ($('.second_section').position().top - 55);
     if(scrollY > top_of_middle_section) {
       $('.nav a, .navbar-brand')
         .css("color", "#333")

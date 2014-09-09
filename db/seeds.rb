@@ -36,6 +36,36 @@ b.cancellation_fee      = 25.00
 
 b.save!
 
+b2 = ElectricPackage.new
+
+b2.name                  = "Middle Package"
+b2.description           = "Some Solar. Some Wind. Some other secret sauce."
+b2.terms                 = "You agree to a variable rate. This means that the changes from month to month."
+b2.plan_type             = "variable"
+b2.price                 = "0.11"
+b2.percent_renewable     = "100"
+b2.duration              = "1"
+b2.provider_id           = 1
+b2.sales_id              = 2
+b2.cancellation_fee      = 25.00
+
+b2.save!
+
+b3 = ElectricPackage.new
+
+b3.name                  = "Expensive Package"
+b3.description           = "Even more gangsta than the gangsta-est of all gangstas"
+b3.terms                 = "You agree to a variable rate. This means that the changes from month to month."
+b3.plan_type             = "variable"
+b3.price                 = "0.24"
+b3.percent_renewable     = "100"
+b3.duration              = "1"
+b3.provider_id           = 1
+b3.sales_id              = 3
+b3.cancellation_fee      = 25.00
+
+b3.save!
+
 c = Provider.new
 
 c.name          = "Green-O-Corp"

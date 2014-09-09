@@ -1,12 +1,68 @@
-<h2>Electric Packages</h2>
-
-<% @electric_packages.each do |package| %>
-<ul>
-  <a href="/electric_packages/<%= package.id %>">
-    <h3><%= package.name %></h3>
-  </a>
-  <li><%= package.description %></li>
-  <li><%= package.price %></li>
-  <li><%= package.plan_type %></li>
-</ul>
-<% end %>
+<div class="main_container">
+  <div class="container-fluid">
+    <div class="electric_packages_big_left col-sm-3">
+      <div class="sidebar">
+          <div class="sidebar_section_1 sidebar_section col-sm-12">
+            <div class="sidebar_title">Section 1?</div>
+            <div class="sidebar_items">
+              <div class="sidebar_item">
+                <label>Some Filter</label>
+                <input type="checkbox">
+              </div>
+              <div class="sidebar_item">
+                <label>Another Filter</label>
+                <input type="checkbox">
+              </div>
+            </div>
+          </div>
+          <div class="sidebar_section_2 sidebar_section col-sm-12">
+            <div class="sidebar_title">Section 2?</div>
+            <div class="sidebar_items">
+              <div class="sidebar_item quad_group">
+                <label>Filter #1</label>
+                <input type="radio" name="sidebar_radio1">
+              </div>
+              <div class="sidebar_item quad_group">
+                <label>Filter #2</label>
+                <input type="radio" name="sidebar_radio1">
+              </div>
+              <div class="sidebar_item quad_group">
+                <label>Filter #3</label>
+                <input type="radio" name="sidebar_radio1">
+              </div>
+              <div class="sidebar_item quad_group">
+                <label>Filter #4</label>
+                <input type="radio" name="sidebar_radio1">
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="electric_packages_big_right col-sm-9">
+      <div class="big_text">Electric Packages - <%= @zip_code %></div>
+      <div class="row electric_packages">
+        <% @electric_packages.each do |package| %>
+        <div class="col-md-6 col-sm-6 col-xs-12 electric_package">
+          <div class="row">
+            <div class="electric_package_items_left col-md-8">
+              <div class="electric_package_name electric_package_datapoint">
+                <a href="/electric_packages/<%= package.id %>"><%= package.name %></a>
+              </div>
+              <div class="electric_package_description electric_package_datapoint"><%= package.description %></div>
+              <div class="electric_package_plan_type electric_package_datapoint"><%= package.plan_type %></div>
+            </div>
+            <div class="electric_package_items_right col-md-4">
+              <div class="electric_package_price electric_package_datapoint"><%= package.price %> <span class='units'>Kw/H</span></div>
+            </div>
+          </div>
+          <div class="row electric_package_actions">
+            <div class="col-sm-6">
+              <button class="btn btn-default">Choose Package</button>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,12 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
-
+.main_container {
+  padding-top: 6em;
+}
+.big_text {
+  font-size: 2em;
+}
 /* Navigation Styling Starts */
 .custom {
   border: 0;
@@ -44,9 +49,9 @@ body {
   margin-bottom: 10px;
 }
 
-/* Navigation Styleing Ends */
+/* Navigation Styling Ends */
 
-
+/**************HOME PAGE*****************/
 /* Start Intro Section */
 
 .action_box {
@@ -55,7 +60,6 @@ body {
   height: 100%;
 }
 .intro-header {
-    padding-top: 6em; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 10em;
     text-align: center;
     color: #f8f8f8;
@@ -95,20 +99,20 @@ body {
 
 /* End Intro section */
 
-/* Start Middle Section */
-.middle_section {
+/* Start Second/Third Section */
+.second_section, .third_section {
   text-align: center;
 }
 
-.how_it_works {
+.how_it_works, .concerns_title {
   font-size: 4em;
   margin-top: 0.5em;
   word-spacing: 9px;
   letter-spacing: 1px;
 }
 
-#pitches {
-  margin: 4em 0;
+#pitches, #concerns_1, #concerns_2 {
+  margin: 5em 0;
 }
 .pitch_point {
   padding: 2em 0;
@@ -122,7 +126,113 @@ body {
 .pitch_icon img {
   border-radius: 50%;
 }
-/* End Middle Section*/
+
+.third_section {
+  background-color: #eee;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.concern_tagline {
+  height: 2em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.concern_icon {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+/* End Second/Third Section*/
+
+/****************ELECTRIC PACKAGES ***************/
+
+/*sidebar*/
+.sidebar {
+  background-color: #ccc;
+  position: fixed;
+  width: 23.3%;
+  height: 100%;
+  z-index: 1;
+}
+.sidebar_title {
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  font-weight: 500;
+}
+.sidebar_section {
+  padding: 1em;
+  border-bottom: 1px solid white;
+  min-height: 8em;
+  color: #777;
+}
+.sidebar_items {
+  margin-top: 1em;
+}
+.sidebar_item {
+  width: 45%;
+  text-align: right;
+}
+.quad_group {
+  display: inline-block;
+  text-align: center;
+}
+
+
+/*end sidebar*/
+
+.electric_packages_big_right, .electric_packages {
+  background-color: #eee;
+}
+.electric_packages {
+  /*background-color: green;*/
+  padding: 1em;
+  position: fixed;
+  width: 73%;
+  overflow: scroll;
+  height: 100%;
+}
+.electric_package {
+  /*background-color: blue;*/
+  border: 1px solid black;
+  margin-top: 5px;
+  min-height: 18em;
+  padding: 1em;
+}
+.electric_package_name {
+  display: inline-block;
+}
+.electric_package_price {
+  font-size: 2.3em;
+  margin-top: 10px;
+}
+.units {
+  font-size: 0.4em;
+}
+.electric_package_actions {
+  position: absolute;
+  bottom: 1em;
+}
+
+/* Start Footer */
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer_links {
+  display: inline-block;
+  margin: 0.5em;
+}
+
+/* End Footer */
 
 /*MEDIA QUERIES*/
 @media(max-width: 600px) {
@@ -133,4 +243,15 @@ body {
   #splash_input {
     text-align: center;
   }
+}
+@media(max-width: 767px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+  }
+  .electric_packages {
+    position: relative;
+    width: initial;
+  }
+
 }
