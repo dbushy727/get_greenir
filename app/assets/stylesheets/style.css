@@ -176,6 +176,7 @@ body {
 .sidebar_item {
   width: 45%;
   text-align: right;
+  display: inline-block;
 }
 .quad_group {
   display: inline-block;
@@ -212,19 +213,26 @@ body {
 }
 .electric_package_name {
   display: inline-block;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 .electric_package_price {
-  font-size: 2.3em;
+  font-size: 2.1em;
   margin-top: 10px;
 }
 .units {
-  font-size: 0.4em;
+  font-size: 0.3em;
 }
 .electric_package_actions {
-  position: absolute;
-  bottom: 1em;
+  margin-top: 1em;
 }
-
+.electric_package_top {
+  min-height: 12em;
+}
+.energy_badge {
+  width: 30%;
+  display: inline-block;
+}
 /* Start Footer */
 
 footer {
