@@ -10,6 +10,8 @@ GetGreenir::Application.routes.draw do
 
   post '/electric_packages/purchase'    => "electric_packages#purchase"
 
+  get '/faq' => "faq#index"
+
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index
 #                       POST   /providers(.:format)                  providers#create
