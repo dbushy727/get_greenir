@@ -18,7 +18,7 @@ body {
 }
 .custom .navbar-nav>li>a {
   margin-top: 20px;
-  color: white;
+  color: #333;
   font-size: 17px;
   font-weight: bold;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 .custom .navbar-brand {
-  color: white;
+  color: #333;
   padding: 0;
 }
 
@@ -233,6 +233,42 @@ body {
   width: 30%;
   display: inline-block;
 }
+
+/************FAQ ************/
+.faq_heading {
+  font-size: 3em;
+  letter-spacing: 10px;
+  display: inline-block;
+}
+
+.faq_subheading {
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+}
+.faqs {
+  margin-bottom: 5em;
+}
+.faq {
+  margin-top: 2em;
+}
+.faq_title {
+  font-size: 1.7em;
+}
+.faq_answer {
+  margin-left: 2em;
+  display: none;
+}
+.faq_paragraph {
+  display: inline-block;
+  width: 50em;
+  margin-top: 0.3em;
+}
+.faq_image {
+  display: inline-block;
+  vertical-align: top;
+}
+
 /* Start Footer */
 
 footer {

@@ -1,12 +1,14 @@
 GetGreenir::Application.routes.draw do
 
+  root to: "home#index"
+  
   resources :providers
-
   resources :electric_packages
 
-  root to: "home#index"
-
+  # Custom Routes
   get '/electric_packages/checkout/:id' => "electric_packages#checkout"
+  get '/faq' => "home#faq"
+  get '/contact' => "home#contact"
 
   post '/electric_packages/purchase'    => "electric_packages#purchase"
 
