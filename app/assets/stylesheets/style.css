@@ -1,7 +1,7 @@
 body {
     /*font-family: 'Source Sans Pro', sans-serif;*/
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    /*font-weight: 300;*/
 }
 .main_container {
   padding-top: 6em;
@@ -271,3 +271,58 @@ footer {
   }
 
 }
+
+
+/* Begin FAQ Page Styling */
+
+.faq_title {
+  margin-top: 20px;
+  font-size: 4em;
+}
+
+.faq_header .intro-header {
+   padding-bottom: 50px;
+}
+
+.faqs {
+  padding: 0 20px 20px 20px;
+}
+
+.faqs ul {
+  text-align: center;
+  display: table;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.faqs li {
+  display: table-cell;
+  font-size: 30px;
+}
+
+.faqs li a {
+  color: #5cb85c;
+}
+
+.faqs .accordion-heading {
+  margin-bottom: 10px;
+}
+
+.faqs h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.faqs .accordion-toggle {
+  font-size: 25px;
+  color: grey;
+}
+
+.faqs .accordion-body {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
+/* End FAQ Page Styling */
