@@ -7,7 +7,6 @@ GetGreenir::Application.routes.draw do
 
   # Custom Routes
   get '/electric_packages/checkout/:id' => "electric_packages#checkout"
-  get '/faq' => "home#faq"
   get '/contact' => "home#contact"
 
   post '/electric_packages/purchase'    => "electric_packages#purchase"
