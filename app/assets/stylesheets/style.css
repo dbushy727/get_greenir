@@ -1,7 +1,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     /*font-family: 'Raleway', sans-serif;*/
-    font-weight: 300;
+    /*font-weight: 300;*/
 }
 .main_container {
   padding-top: 6em;
@@ -19,7 +19,7 @@ body {
 .custom .navbar-nav>li>a {
   margin-top: 20px;
   color: #333;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -31,6 +31,7 @@ body {
 .custom .navbar-brand {
   color: #333;
   padding: 0;
+  font-size: 20px;
 }
 
 .custom .navbar-brand:hover {
@@ -360,10 +361,16 @@ footer {
   color: grey;
 }
 
+.faqs .accordion-toggle:hover {
+  color: green;
+  text-decoration: none;
+}
+
 .faqs .accordion-body {
   margin-bottom: 20px;
   font-size: 18px;
 }
+
 
 
 /* End FAQ Page Styling */
