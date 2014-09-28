@@ -48,13 +48,15 @@
     </div>
     <div class="electric_packages_big_right col-sm-9">
       <div class="big_text">Electric Packages - <%= @zip_code %></div>
+      <div><a href="#">Not Sure If You Want A Fix Or Variable Package? Read Our Blog Post!</a></div>
       <div class="row electric_packages">
         <% @electric_packages.each do |package| %>
         <div class="col-md-6 col-sm-6 col-xs-12 electric_package">
           <div class="row electric_package_top">
             <div class="electric_package_items_left col-md-8">
+              <div class="electric_package_image"><img src="<%= package.provider.logo %>" /></div>
               <div class="electric_package_name electric_package_datapoint"><%= package.name %></div>
-              <div class="electric_package_plan_type electric_package_datapoint">Plan Type: <%= package.plan_type %></div>
+              <div class="electric_package_plan_type electric_package_datapoint">Plan Type: <span style="text-transform: uppercase;"><%= package.plan_type %></span></div>
               <div class="electric_package_description electric_package_datapoint">Description: <%= package.description %></div>
             </div>
             <div class="electric_package_items_right col-md-4">
