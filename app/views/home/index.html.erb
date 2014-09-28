@@ -3,11 +3,11 @@
         <div class="row">
             <div class="col-md-12 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-md-offset-0 action_box">
                 <div class="intro-message">
-                 Review Your Local Options And Switch To Renewable Electricity In 5 Minutes
+                 Review Your Local Options And Switch To Renewable Electricity For Your Home Or Apartment In 5 Minutes
                 </div>
                 <form class="form-inline splash_form" action="/electric_packages" method="GET">
                     <div class='form-group'>
-                        <input type="text" name="zip_code" id="splash_input" placeholder="Enter Zip">
+                        <input type="text" name="zip_code" id="splash_input" placeholder="Enter Zip" autofocus>
                     </div>
                     <div class="form-group ">
                         <input class='zip_submit btn btn-success' type="submit" id="splash_submit" value="Go Green">
@@ -29,19 +29,19 @@
         <div class="row" id="pitches">
             <div class="col-md-4 pitch_point">
                 <div class="pitch_icon">
-                    <img src="http://www.placebear.com/150/150">
+                    <img src="<%= asset_path( 'search.png' ) %>">
                 </div>
-                <div class="pitch_tagline">Review Your Local Renewable Electricity Packages</div>
+                <div class="pitch_tagline">Search And Review Your Local Renewable Electricity Packages</div>
             </div>
             <div class="col-md-4 pitch_point">
                 <div class="pitch_icon">
-                    <img src="http://www.placebear.com/150/150">
+                    <img src="<%= asset_path( 'select.png' ) %>">
                 </div>
                 <div class="pitch_tagline">Choose The Package That Works For You</div>
             </div>
             <div class="col-md-4 pitch_point">
                 <div class="pitch_icon">
-                    <img src="http://www.placebear.com/150/150">
+                    <img src="<%= asset_path( 'turbine.png' ) %>">
                 </div>
                 <div class="pitch_tagline">Join The Green Energy Movement</div>
             </div>

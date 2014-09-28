@@ -81,7 +81,7 @@ body {
 }
 
 .splash_form {
-  margin: 2em 0;
+  margin: .5em 0;
 }
 
 #splash_input {
@@ -126,6 +126,8 @@ body {
 }
 .pitch_icon img {
   border-radius: 50%;
+  height: 150px;
+  width: 150px;
 }
 
 .third_section {
