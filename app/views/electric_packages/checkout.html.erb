@@ -1,4 +1,24 @@
-a<h2>Checkout</h2>
+<!-- .intro-header -->
+	<div class="faq_header">
+		<div class="intro-header main_container faq_splash">
+		    <div class="container">
+		        <div class="row">
+		         <h1 class="faq_title">Checkout</h1>
+		        </div>
+		    </div>
+		</div>
+	</div>
+<!-- /.intro-header -->
+
+<table class="table">
+	<tr>
+		<td><img src="<%= @electric_package.provider.logo %>"></td>
+		<td>Price:: <%= @electric_package.price %><br>
+			Duration: <%= @electric_package.duration %> Months<br>
+			Energy Source: <%= @electric_package.percent_renewable %></td>
+	</tr>
+
+</table>
 
 <p>You have selected <%= @electric_package.name %></p>
 
@@ -7,6 +27,7 @@ a<h2>Checkout</h2>
 <li><%= @electric_package.percent_renewable %></li>
 <li><%= @electric_package.duration %></li>
 <li><%= @electric_package.cancellation_fee %></li>
+<li><img src="<%= @electric_package.provider.logo %>"></li>
 
 <p>Please fill out your information</p>
 

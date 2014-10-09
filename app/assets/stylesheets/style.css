@@ -59,9 +59,10 @@ body {
   background-color: rgba(8,8,8,0.5);
   border-radius: 6px;
   height: 100%;
+  margin-top: 20px;
 }
 .intro-header {
-    padding-bottom: 11em;
+    padding-bottom: 5em;
     text-align: center;
     color: #f8f8f8;
 /*    background: url("temp_green_background.jpg") no-repeat center center;
@@ -131,7 +132,20 @@ body {
 }
 
 .third_section {
-  background-color: #eee;
+  /*background-color: #eee;*/
+}
+
+.third_section h2 {
+  color: #5cb85c;
+}
+
+.third_section a {
+  color: #5cb85c;
+}
+
+.third_section a:hover {
+  color: #449d44;
+  text-decoration: none;
 }
 
 .fa-10x {

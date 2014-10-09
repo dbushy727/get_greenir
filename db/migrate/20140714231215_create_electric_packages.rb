@@ -5,12 +5,12 @@ class CreateElectricPackages < ActiveRecord::Migration
       t.text :description
       t.text :terms
       t.string :type
-      t.float :price
-      t.float :percent_renewable
+      t.string :price
+      t.string :percent_renewable
       t.string :duration
       t.integer :provider_id
       t.integer :sales_id
-      t.float :cancellation_fee
+      t.string :cancellation_fee
 
       t.timestamps
     end
