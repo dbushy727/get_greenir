@@ -13,6 +13,8 @@ GetGreenir::Application.routes.draw do
 
   get '/faq' => "faq#index"
 
+  post '/user' => "user#create"
+
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index
 #                       POST   /providers(.:format)                  providers#create

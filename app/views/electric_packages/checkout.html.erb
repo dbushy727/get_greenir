@@ -9,33 +9,46 @@
 		</div>
 	</div>
 <!-- /.intro-header -->
+<div class="checkout">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<table class="table">
+				<tr><td>You have selected <%= @electric_package.name %></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><img src="<%= @electric_package.provider.logo %>"></td>
+					<td>Provider: <%= @electric_package.provider.name %> <br>
+						Energy Source: <%= @electric_package.percent_renewable %><br>
+						Cancellation Fee: <%= @electric_package.cancellation_fee %>
+					</td>
+					<td>Price:: <%= @electric_package.price %><br>
+						Duration: <%= @electric_package.duration %> Months<br></td>
+				</tr>
 
-<table class="table">
-	<tr>
-		<td><img src="<%= @electric_package.provider.logo %>"></td>
-		<td>Price:: <%= @electric_package.price %><br>
-			Duration: <%= @electric_package.duration %> Months<br>
-			Energy Source: <%= @electric_package.percent_renewable %></td>
-	</tr>
+			</table>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
 
-</table>
+<h2>Account Info</h2>
 
-<p>You have selected <%= @electric_package.name %></p>
+<%= form_for @user do |f| %>
+  <%= f.label :first_name %>:
+  <%= f.text_field :first_name %><br />
 
-<ul>This package includes: </ul>
-<li><%= @electric_package.price %></li>
-<li><%= @electric_package.percent_renewable %></li>
-<li><%= @electric_package.duration %></li>
-<li><%= @electric_package.cancellation_fee %></li>
-<li><img src="<%= @electric_package.provider.logo %>"></li>
+  <%= f.label :last_name %>:
+  <%= f.text_field :last_name %><br />
 
-<p>Please fill out your information</p>
+  <%= f.submit %>
+<% end %>
 
-<form action="electric_packages/purchase" method="post">
-  <input type="text">
-  <input type="text">
-  <input type="text">
-  <input type="text">
-  <input type="text">
+<!-- <form role="form" action="electric_packages/purchase" method="post">
+	<div class="form-group">
+  		<input type="text">
+  	</div>
   <input type="submit" value="Checkout">
-</form>
+</form> -->

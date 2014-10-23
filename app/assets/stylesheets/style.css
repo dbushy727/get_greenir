@@ -139,6 +139,15 @@ body {
   color: #5cb85c;
 }
 
+.third_section #see_more_faq a {
+  color: #428bca
+}
+
+.third_section #see_more_faq a:hover {
+  color: #449d44;
+  text-decoration: none;
+}
+
 .third_section a {
   color: #5cb85c;
 }
@@ -401,3 +410,14 @@ body {
 
 
 /* End FAQ Page Styling */
+
+.checkout .table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Start Checkout Page Styling */
+
+
+
+/* End Checkout Page Styling */
