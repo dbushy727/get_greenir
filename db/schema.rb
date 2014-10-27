@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(version: 20140714234053) do
     t.string   "phone_number"
     t.string   "con_ed_id"
     t.string   "home_ownership_type"
-    t.datetime "lease_termination_date"
+    t.string   "lease_termination_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
