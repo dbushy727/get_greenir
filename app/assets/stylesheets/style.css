@@ -32,6 +32,7 @@ body {
   color: #333;
   padding: 0;
   font-size: 20px;
+
 }
 
 .custom .navbar-brand:hover {
@@ -42,6 +43,7 @@ body {
 .navbar {
   height: 5em;
   background-color: white;
+  padding-bottom: 80px;
 }
 
 .logo {
@@ -62,6 +64,7 @@ body {
   margin-top: 20px;
 }
 .intro-header {
+    margin-top: 80px;
     padding-bottom: 5em;
     text-align: center;
     color: #f8f8f8;
@@ -411,13 +414,26 @@ body {
 
 /* End FAQ Page Styling */
 
+
+/* Start Checkout Page Styling */
+
 .checkout .table {
   margin-top: 20px;
   width: 100%;
 }
 
-/* Start Checkout Page Styling */
+.user_submit {
+  width: 100%;
+  font-size: 18px;
+  background-color: 
+}
 
+.sign_up_form label {
+  font-size: 18px;
+}
 
+.sign_up_form p {
+  font-size: 12px;
+}
 
 /* End Checkout Page Styling */
