@@ -6,6 +6,7 @@ GetGreenir::Application.routes.draw do
   resources :electric_packages
   resources  :users
 
+
   # Custom Routes
   get '/electric_packages/checkout/:id' => "electric_packages#checkout"
   get '/contact' => "home#contact"
@@ -13,6 +14,8 @@ GetGreenir::Application.routes.draw do
   post '/electric_packages/purchase'    => "electric_packages#purchase"
 
   get '/faq' => "faq#index"
+
+  post '/user_emails' => "user_emails#create"
 
 #   Prefix Verb   URI Pattern                           Controller#Action
 #             providers GET    /providers(.:format)                  providers#index
