@@ -78,6 +78,8 @@
 			      <%= f.label :lease_termination_date, "If you are a renter, when is your lease over?" %>
 			      <%= f.text_field :lease_termination_date, :class => "form-control", placeholder: "m/dd/yy" %>
 				</div>
+
+				<%= f.hidden_field :package_id, :value => @electric_package.id %>
 				
 				<div class="form-group">
 			      <%= f.label :con_ed_id, "sdfdsf" %>
@@ -121,4 +123,6 @@
 </div>
 	</div>
 </div>
+
+
 

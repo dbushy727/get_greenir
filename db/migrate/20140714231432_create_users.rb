@@ -12,6 +12,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :con_ed_id
       t.string :home_ownership_type
       t.string :lease_termination_date
+      t.integer :package_id
 
       t.timestamps
     end

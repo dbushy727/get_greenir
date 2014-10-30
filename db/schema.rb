@@ -78,6 +78,7 @@ ActiveRecord::Schema.define(version: 20141029034409) do
     t.string   "con_ed_id"
     t.string   "home_ownership_type"
     t.string   "lease_termination_date"
+    t.integer  "package_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
