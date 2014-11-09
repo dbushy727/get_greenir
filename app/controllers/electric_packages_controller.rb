@@ -22,6 +22,8 @@ class ElectricPackagesController < ApplicationController
   def checkout
     id = params['id']
     @electric_package = ElectricPackage.find(id)
+    @user = User.new
+    @user_email = UserEmail.new
   end
 
   def purchase

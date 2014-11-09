@@ -12,8 +12,7 @@ green_mountain_packages = HTTParty.get("https://www.kimonolabs.com/api/3te0xtz2?
 
 a = User.new
 
-a.first_name                  = "Daniel"
-a.last_name                   = "Bushkanets"
+a.name						  = "Evan Besser"
 a.email                       = "Email"
 a.address_1                   = "123 Fake Ln, Fakerton NF 10001"
 a.address_2                   = "Apt. 4A"
