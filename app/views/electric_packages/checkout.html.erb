@@ -14,7 +14,8 @@
 		<div class="col-md-3"></div>
 		<div class="col-md-6">
 			<table class="table">
-				<tr><td>You have selected <%= @electric_package.name %></td>
+				<tr>
+					<td class='your_selection'>You have selected <a href="#"><%= @electric_package.name %></a></td>
 					<td></td>
 					<td></td>
 				</tr>
@@ -24,7 +25,7 @@
 						Energy Source: <%= @electric_package.percent_renewable %><br>
 						Cancellation Fee: <%= @electric_package.cancellation_fee %>
 					</td>
-					<td>Price:: <%= @electric_package.price %><br>
+					<td>Price: <%= @electric_package.price %><br>
 						Duration: <%= @electric_package.duration %> Months<br></td>
 				</tr>
 
