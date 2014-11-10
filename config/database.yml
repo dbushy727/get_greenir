@@ -19,7 +19,6 @@ development:
   encoding: unicode
   database: get_greenir_development
   pool: 5
-  username: 
   password: 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,13 +47,11 @@ test:
   encoding: unicode
   database: get_greenir_test
   pool: 5
-  username: 
   password: 
 
 production:
   adapter: postgresql
   encoding: unicode
   database: get_greenir_production
-  pool: 5
-  username:   
+  pool: 5 
   password: 
