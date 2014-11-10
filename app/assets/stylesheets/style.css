@@ -134,8 +134,8 @@ body {
   width: 150px;
 }
 
-.third_section {
-  /*background-color: #eee;*/
+.third_section .col-md-6 {
+  text-align: center;
 }
 
 .third_section h2 {
@@ -143,7 +143,12 @@ body {
 }
 
 .third_section #see_more_faq a {
-  color: #428bca
+  color: #428bca;
+  text-align: center;
+}
+
+.third_section #see_more_faq h2 {
+  text-align: center;
 }
 
 .third_section #see_more_faq a:hover {
@@ -158,6 +163,11 @@ body {
 .third_section a:hover {
   color: #449d44;
   text-decoration: none;
+}
+
+.third_section h1 {
+  text-align: left;
+  padding-left: 80px;
 }
 
 .fa-10x {
@@ -420,6 +430,15 @@ body {
 .checkout .table {
   margin-top: 20px;
   width: 100%;
+}
+
+.checkout .your_selection {
+  font-size: 18px;
+}
+
+.checkout .your_selection a:hover {
+  color: #449d44;
+  text-decoration: none;
 }
 
 .user_submit {
