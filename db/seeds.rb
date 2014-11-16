@@ -9,20 +9,6 @@ require 'httparty'
 
 green_mountain_packages = HTTParty.get("https://www.kimonolabs.com/api/3te0xtz2?apikey=SpEVfxZtGjY2wvrNotclpNh1mNKChRRi")
 
-
-a = User.new
-
-a.name						  = "Evan Besser"
-a.email                       = "Email"
-a.address_1                   = "123 Fake Ln, Fakerton NF 10001"
-a.address_2                   = "Apt. 4A"
-a.phone_number                = "(516)555-1234"
-a.con_ed_id                   = "1234567890"
-a.home_ownership_type         = "renter"
-a.lease_termination_date      = "2014-11-1"
-
-a.save!
-
 b = ElectricPackage.new
 
 b.name                  = green_mountain_packages["results"]["collection1"][0]["products"]
