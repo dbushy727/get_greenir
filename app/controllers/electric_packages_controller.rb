@@ -10,7 +10,8 @@ class ElectricPackagesController < ApplicationController
       redirect_to root_path
     end
 
-    @electric_packages = ElectricPackage.all
+    @electric_packages_variable = ElectricPackage.all.order("price").where(:plan_type => "variable")[0..2]
+    @electric_packages_fixed = ElectricPackage.all.order("price").where(:plan_type => "fixed")[0..2]
   end
 
 
