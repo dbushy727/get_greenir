@@ -309,6 +309,17 @@ section {
 
 }
 
+#labels .current_price {
+  float: right;
+  display: inline-block;
+
+}
+
+#labels .price {
+  color: #5cb85c;
+  text-decoration: underline;
+}
+
 #labels .intro a {
   font-size: 18px;
 }

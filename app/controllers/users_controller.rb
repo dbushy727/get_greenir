@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 	def create
 		puts params[user_params]
 		@user = User.create(user_params)
-		redirect_to '/'
+		redirect_to 'http://ctt.ec/a8c8c'
 	end
 
 	private
